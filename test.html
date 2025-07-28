@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <title> نوع المستخدم</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, #007BFF, #00C6FF);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 25px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+            motion-rotation: ;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 35px;
+            color: #007BFF;
+        }
+
+        .roles {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .role {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 18px 24px;
+            border-radius: 15px;
+            background: linear-gradient(45deg, #e0f7ff, #f1f9ff);
+            border: 2px solid #007BFF;
+            color: #007BFF;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+        }
+
+        .role i {
+            font-size: 28px;
+            min-width: 35px;
+        }
+
+        .role:hover {
+            background: #007BFF;
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+        }
+
+        @media (max-width: 500px) {
+            .role {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .role i {
+                font-size: 30px;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>اختر نوع المستخدم</h1>
+        <div class="roles">
+            <a href="./index.html" class="role">
+                <i class="fas fa-user-md"></i>
+                <span>دكتور صيدلي</span>
+            </a>
+            <a href="./index.html" class="role">
+                <i class="fas fa-truck"></i>
+                <span>مندوب توصيل</span>
+            </a>
+            <a href="./index.html" class="role">
+                <i class="fas fa-user"></i>
+                <span>مستخدم</span>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
